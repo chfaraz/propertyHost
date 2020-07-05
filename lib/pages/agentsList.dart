@@ -15,7 +15,7 @@ class _AgentsListState extends State<AgentsList> {
       backgroundColor: Colors.grey[600],
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text('Property Host'),
+        title: Text('List of Agents'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -34,34 +34,18 @@ class _AgentsListState extends State<AgentsList> {
             margin: EdgeInsets.only(top: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  color: Colors.grey[800],
-                  height: 40,
-                  width: 400,
-                  child: Center(
-                    child: Text(
-                      'List of Agents',
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                  ),
-                )
-              ],
             ),
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
             child: Card(
               elevation: 5,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
               ),
               child: Container(
-                decoration: BoxDecoration(color: Colors.grey[400]),
+                decoration: BoxDecoration(color: Colors.white),
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Row(
@@ -79,7 +63,7 @@ class _AgentsListState extends State<AgentsList> {
                           child: CircleAvatar(
                             //backgroundColor: Colors.green,
                             //foregroundColor: Colors.green,
-                            backgroundImage: AssetImage('img/1.jpg'),
+                            backgroundImage: AssetImage('assets/1.jpg'),
                           ),
                         ),
                         SizedBox(
@@ -148,14 +132,14 @@ class _AgentsListState extends State<AgentsList> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
             child: Card(
               elevation: 5,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
               ),
               child: Container(
-                decoration: BoxDecoration(color: Colors.grey[400]),
+                decoration: BoxDecoration(color: Colors.white),
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Row(
@@ -173,7 +157,7 @@ class _AgentsListState extends State<AgentsList> {
                           child: CircleAvatar(
                             //backgroundColor: Colors.green,
                             //foregroundColor: Colors.green,
-                            backgroundImage: AssetImage('img/1.jpg'),
+                            backgroundImage: AssetImage('assets/2.jpg'),
                           ),
                         ),
                         SizedBox(
@@ -240,14 +224,14 @@ class _AgentsListState extends State<AgentsList> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
             child: Card(
               elevation: 5,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
               ),
               child: Container(
-                decoration: BoxDecoration(color: Colors.grey[400]),
+                decoration: BoxDecoration(color: Colors.white),
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Row(
@@ -265,7 +249,7 @@ class _AgentsListState extends State<AgentsList> {
                           child: CircleAvatar(
                             //backgroundColor: Colors.green,
                             //foregroundColor: Colors.green,
-                            backgroundImage: AssetImage('img/1.jpg'),
+                            backgroundImage: AssetImage('assets/1.jpg'),
                           ),
                         ),
                         SizedBox(
@@ -332,14 +316,14 @@ class _AgentsListState extends State<AgentsList> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
             child: Card(
               elevation: 5,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
               ),
               child: Container(
-                decoration: BoxDecoration(color: Colors.grey[400]),
+                decoration: BoxDecoration(color: Colors.white),
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Row(
@@ -357,7 +341,7 @@ class _AgentsListState extends State<AgentsList> {
                           child: CircleAvatar(
                             //backgroundColor: Colors.green,
                             //foregroundColor: Colors.green,
-                            backgroundImage: AssetImage('img/1.jpg'),
+                            backgroundImage: AssetImage('assets/3.jpg'),
                           ),
                         ),
                         SizedBox(

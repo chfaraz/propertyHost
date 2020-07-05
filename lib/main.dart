@@ -13,6 +13,8 @@ import 'package:propertyHost/pages/enterCode.dart';
 import 'package:propertyHost/pages/liveNotification.dart';
 import 'package:propertyHost/pages/choseOnMap.dart';
 import 'package:propertyHost/pages/advertise.dart';
+import 'package:propertyHost/pages/adsList.dart';
+import 'package:propertyHost/pages/adDetail.dart';
 
 void main() => runApp(MaterialApp(
       initialRoute: '/main',
@@ -31,6 +33,8 @@ void main() => runApp(MaterialApp(
         '/LiveNotification': (context) => LiveNotification(),
         '/ChoseOnMap': (context) => ChoseOnMap(),
         '/Advertise': (context) => Advertise(),
+        '/AdsList': (context) => AdsList(),
+        '/AdDetail': (context) => AdDetail(),
       },
     ));
 
@@ -131,11 +135,11 @@ class HomePage extends StatelessWidget {
                 color: Colors.grey[800],
                 child: ListTile(
                   title: Text(
-                    'Get Direction',
+                    'Your Ads',
                     style: TextStyle(color: Colors.grey[200]),
                   ),
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/AdsList');
                   },
                 ),
               ),
