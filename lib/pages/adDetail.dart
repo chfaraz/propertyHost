@@ -168,7 +168,7 @@ class AdDetail extends StatelessWidget {
                                           ),
                                         ),
                                         Container(
-                                          width: 230,
+                                          width: 245,
                                           child: Align(
                                             alignment: Alignment.centerRight,
                                             child: Text(
