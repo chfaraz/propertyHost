@@ -35,7 +35,7 @@ class _AgentDetailState extends State<AgentDetail> {
       backgroundColor: Colors.white,
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text('Property Host'),
+        title: Text('Agent Detail'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -50,20 +50,15 @@ class _AgentDetailState extends State<AgentDetail> {
       ),
       body: Stack(
         children: <Widget>[
-          //_buildCoverImage(screenSize),
           SafeArea(
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-                  //SizedBox(height: screenSize.height / 45),
                   _buildProfileImage(),
                   _buildFullName(),
                   _buildStatus(context),
-                  //            _buildStatContainer(),
                   SizedBox(height: 10.0),
                   _buildBio(context),
-                  //          _buildSeparator(screenSize),
-
                   SizedBox(height: 8.0),
                   _buildpropertyStatus(context),
                   _buildPropertyList(),
@@ -74,14 +69,6 @@ class _AgentDetailState extends State<AgentDetail> {
                   _showContactForm(),
                   _showName(),
                   _showContact(context),
-
-                  //            _showPhone(),
-                  //            _showEmail(),
-                  // _showContact(),
-                  //      _buildReviews(context),
-                  //          _buildGetInTouch(context),
-                  //   _showDescInput(),
-                  //         _buildButtons(),
                 ],
               ),
             ),
@@ -95,12 +82,6 @@ class _AgentDetailState extends State<AgentDetail> {
     return Container(
       color: Colors.black38,
       height: screenSize.height / 7.5,
-      // decoration: BoxDecoration(
-//        image: DecorationImage(
-//
-//          //image: AssetImage('img/1.jpg'),
-//          fit: BoxFit.cover,
-//     //   ),
     );
   }
 
@@ -116,7 +97,6 @@ class _AgentDetailState extends State<AgentDetail> {
     return Container(
       width: 270,
       color: Colors.white,
-      //padding: EdgeInsets.all(8.0),
       child: Text(
         _bio,
         textAlign: TextAlign.center,
@@ -186,13 +166,6 @@ class _AgentDetailState extends State<AgentDetail> {
         children: <Widget>[
           Container(
             padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 6.0),
-//            decoration: BoxDecoration(
-//              color: Theme
-//                  .of(context)
-//                  .accentColor,
-//              borderRadius: BorderRadius.circular(15.0),
-//
-//            ),
             child: Text(
               _listings,
               style: TextStyle(
@@ -215,11 +188,8 @@ class _AgentDetailState extends State<AgentDetail> {
         padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//crossAxisAlignment: Cross,
               children: <Widget>[
                 Text(
                   _status,
@@ -231,44 +201,9 @@ class _AgentDetailState extends State<AgentDetail> {
                   ),
                 ),
               ],
-              //     padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 6.0),
-//            decoration: BoxDecoration(
-//              color: Theme
-//                  .of(context)
-//                  .accentColor,
-//              borderRadius: BorderRadius.circular(15.0),
-//
-//            ),
             ),
             Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//crossAxisAlignment: Cross,
-              children: <Widget>[
-//                FlatButton(
-//                  disabledColor: Colors.white,
-//                  onPressed: null,
-//                  child: Text('Write a review', style: TextStyle(
-//                      color: Colors.blue,
-//                    fontWeight: FontWeight.bold,
-//                    fontSize: 16,
-//                  )
-//                  ),
-//
-//                  shape: RoundedRectangleBorder(side: BorderSide(
-//                      color: Colors.blue,
-//                      width: 1.5,
-//                      style: BorderStyle.solid
-//                  ), borderRadius: BorderRadius.circular(15)),
-//                ),
-              ],
-              //     padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 6.0),
-//            decoration: BoxDecoration(
-//              color: Theme
-//                  .of(context)
-//                  .accentColor,
-//              borderRadius: BorderRadius.circular(15.0),
-//
-//            ),
+              children: <Widget>[],
             ),
           ],
         ),
@@ -279,7 +214,6 @@ class _AgentDetailState extends State<AgentDetail> {
   Widget _buildPropertyList() {
     return Container(
       margin: EdgeInsets.only(top: 15),
-      //margin: EdgeInsets.symmetric(vertical: 20.0),
       height: 200,
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -296,7 +230,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       fit: BoxFit.cover,
                     ),
                   ),
-
                   Container(
                     color: Colors.grey,
                     child: ListTile(
@@ -310,9 +243,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       ),
                     ),
                   ),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
                 ],
               ),
             ),
@@ -329,7 +259,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       fit: BoxFit.cover,
                     ),
                   ),
-
                   Container(
                     color: Colors.grey,
                     child: ListTile(
@@ -343,9 +272,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       ),
                     ),
                   ),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
                 ],
               ),
             ),
@@ -362,7 +288,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       fit: BoxFit.cover,
                     ),
                   ),
-
                   Container(
                     color: Colors.grey,
                     child: ListTile(
@@ -376,9 +301,6 @@ class _AgentDetailState extends State<AgentDetail> {
                       ),
                     ),
                   ),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
-                  //propertyList('img/1.jpg', 'heading', 'subHeading'),
                 ],
               ),
             ),
@@ -387,58 +309,6 @@ class _AgentDetailState extends State<AgentDetail> {
       ),
     );
   }
-
-//  Widget _showDescInput() {
-//    return Container(
-//      padding: EdgeInsets.all(10),
-//      decoration: BoxDecoration(
-//        border: Border.all(
-//          width: 7,
-//          color: Colors.black26,
-//        ),
-//        borderRadius: BorderRadius.circular(50.0),
-//      ),
-//      //color: Colors.grey[200],
-//      child: Padding(
-//        padding: const EdgeInsets.all(8.0),
-//        child: Column(
-//          children: <Widget>[
-//            TextFormField(
-//              maxLines: 5,
-//              autofocus: false,
-//              decoration: InputDecoration(
-//                border: OutlineInputBorder(
-//                  borderRadius: BorderRadius.circular(25.0),
-//                  borderSide: BorderSide(),
-//                ),
-//                hintText: 'Description',
-//                //icon: Icon(Icons.description),
-//              ),
-//              //textAlign: TextAlign,
-//              validator: (value) =>
-//                  value.isEmpty ? 'Description can\'t be empty' : null,
-//            ),
-//            FlatButton(
-//              disabledColor: Colors.white,
-//              onPressed: null,
-//              child: Text('Write a review',
-//                  style: TextStyle(
-//                    color: Colors.blue,
-//                    fontWeight: FontWeight.bold,
-//                    fontSize: 16,
-//                  )),
-//              shape: RoundedRectangleBorder(
-//                  side: BorderSide(
-//                      color: Colors.blue, width: 1.5, style: BorderStyle.solid),
-//                  borderRadius: BorderRadius.circular(15)),
-//            ),
-//          ],
-//
-//          // ),
-//        ),
-//      ),
-//    );
-//  }
 
   Widget _showName() {
     return Container(
@@ -463,7 +333,6 @@ class _AgentDetailState extends State<AgentDetail> {
               autofocus: false,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  //borderRadius: BorderRadius.circular(25.0),
                   borderSide: BorderSide(),
                 ),
                 hintText: 'Enter Name',
@@ -481,7 +350,6 @@ class _AgentDetailState extends State<AgentDetail> {
               autofocus: false,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  //borderRadius: BorderRadius.circular(25.0),
                   borderSide: BorderSide(),
                 ),
                 hintText: 'Enter Number',
@@ -499,7 +367,6 @@ class _AgentDetailState extends State<AgentDetail> {
               autofocus: false,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  //borderRadius: BorderRadius.circular(25.0),
                   borderSide: BorderSide(),
                 ),
                 hintText: 'Enter Email',
@@ -510,8 +377,6 @@ class _AgentDetailState extends State<AgentDetail> {
             ),
           ),
           Container(
-            //padding: EdgeInsets.only(left: 50, right: 50, bottom: 10),
-            //color: Colors.grey[200],
             child: Padding(
               padding: EdgeInsets.only(left: 50, right: 50, bottom: 10),
               child: Column(
@@ -521,15 +386,13 @@ class _AgentDetailState extends State<AgentDetail> {
                     autofocus: false,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                        //  borderRadius: BorderRadius.circular(25.0),
                         borderSide: BorderSide(),
                       ),
-                      hintText: 'Description',
+                      hintText: 'Message',
                       icon: Icon(Icons.description),
                     ),
-                    //textAlign: TextAlign,
                     validator: (value) =>
-                        value.isEmpty ? 'Description can\'t be empty' : null,
+                        value.isEmpty ? 'Message can\'t be empty' : null,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 40, top: 10),
@@ -623,8 +486,6 @@ class _AgentDetailState extends State<AgentDetail> {
         ),
       ),
       child: Column(
-        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        //crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
             height: 50,
@@ -633,9 +494,7 @@ class _AgentDetailState extends State<AgentDetail> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  //                             Icon(Icons.schedule,),
                   Container(
                       width: 70,
                       child: Text(
@@ -645,7 +504,6 @@ class _AgentDetailState extends State<AgentDetail> {
                   SizedBox(
                     width: 50,
                   ),
-
                   Text('Ali Qureshi'),
                 ],
               ),
@@ -658,9 +516,7 @@ class _AgentDetailState extends State<AgentDetail> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  //                             Icon(Icons.schedule,),
                   Container(
                       width: 70,
                       child: Text(
@@ -670,7 +526,6 @@ class _AgentDetailState extends State<AgentDetail> {
                   SizedBox(
                     width: 50,
                   ),
-
                   Text('35'),
                 ],
               ),
@@ -683,9 +538,7 @@ class _AgentDetailState extends State<AgentDetail> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  //                             Icon(Icons.schedule,),
                   Container(
                       width: 70,
                       child: Text(
@@ -695,7 +548,6 @@ class _AgentDetailState extends State<AgentDetail> {
                   SizedBox(
                     width: 50,
                   ),
-
                   Flexible(child: Text('DHA Defence, Islamabad')),
                 ],
               ),
@@ -708,9 +560,7 @@ class _AgentDetailState extends State<AgentDetail> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  //                             Icon(Icons.schedule,),
                   Container(
                       width: 70,
                       child: Text(
@@ -720,7 +570,6 @@ class _AgentDetailState extends State<AgentDetail> {
                   SizedBox(
                     width: 50,
                   ),
-
                   Text('+92 333 3424242'),
                 ],
               ),
@@ -732,21 +581,9 @@ class _AgentDetailState extends State<AgentDetail> {
   }
 
   Widget _showContact(BuildContext context) {
-//    return Container(
-//      padding: EdgeInsets.all(10),
-//      decoration: BoxDecoration(
-//        border: Border.all(
-//          width: 7,
-//          color: Colors.black26,
-//        ),
-//        borderRadius: BorderRadius.circular(50.0),
-//      ),
-//      //color: Colors.grey[200],
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4.0),
       padding: const EdgeInsets.all(16.0),
-
-      //color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -811,21 +648,16 @@ class _AgentDetailState extends State<AgentDetail> {
                   autofocus: false,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25.0),
+                      borderRadius: BorderRadius.circular(7.0),
                       borderSide: BorderSide(),
                     ),
-                    hintText: 'Description',
-                    //icon: Icon(Icons.description),
+                    hintText: 'Write Review',
                   ),
-                  //textAlign: TextAlign,
                   validator: (value) =>
-                      value.isEmpty ? 'Description can\'t be empty' : null,
+                      value.isEmpty ? 'Review can\'t be empty' : null,
                 ),
                 FlatButton(
                   disabledColor: Colors.grey[800],
-                  //onPressed: () =>
-                  // Provider.of<DisplayReview>(context, listen: false)
-                  // .addTaskInList(),
                   child: Text('Submit',
                       style: TextStyle(
                         color: Colors.white,

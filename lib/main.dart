@@ -15,6 +15,8 @@ import 'package:propertyHost/pages/choseOnMap.dart';
 import 'package:propertyHost/pages/advertise.dart';
 import 'package:propertyHost/pages/adsList.dart';
 import 'package:propertyHost/pages/adDetail.dart';
+import 'package:propertyHost/pages/myProfile.dart';
+import 'package:propertyHost/pages/notificationList.dart';
 
 void main() => runApp(MaterialApp(
       initialRoute: '/main',
@@ -35,6 +37,8 @@ void main() => runApp(MaterialApp(
         '/Advertise': (context) => Advertise(),
         '/AdsList': (context) => AdsList(),
         '/AdDetail': (context) => AdDetail(),
+        '/MyProfile': (context) => MyProfile(),
+        '/NotificationList': (context) => NotificationList(),
       },
     ));
 
@@ -100,7 +104,7 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(color: Colors.grey[200]),
                   ),
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/PostAdd');
                   },
                 ),
               ),
@@ -109,11 +113,11 @@ class HomePage extends StatelessWidget {
                 color: Colors.grey[800],
                 child: ListTile(
                   title: Text(
-                    'Buy',
+                    'My Profile',
                     style: TextStyle(color: Colors.grey[200]),
                   ),
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/MyProfile');
                   },
                 ),
               ),
